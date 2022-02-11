@@ -9,6 +9,7 @@ function KegDetail(props){
       <h2>Keg Detail</h2>
       <h4>{keg.name}, {keg.abv}% - ${keg.price}</h4>
       <p><em>{keg.brand}</em></p>
+      <p>Available pints: {keg.quantity}</p>
       <hr />
     </React.Fragment>
   );

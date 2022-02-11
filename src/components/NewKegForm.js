@@ -10,6 +10,7 @@ function NewKegForm(props){
         <input type="number" step="0.01" name="abv" placeholder="ABV" min="0.0" max="15.0" />
         <input type="number" step="0.01" name="price" placeholder="Price" min="0.0"/>
         <input type="text" name="brand" placeholder="Brand" />
+        <input type="number" name="quantity" placeholder="Available Pints (full keg= 124 pints)" min="0" defaultValue="124" />
         <button type="submit">Add Keg</button>
       </form>
     </React.Fragment>
@@ -22,6 +23,7 @@ function NewKegForm(props){
       abv: event.target.abv.value,
       price: event.target.price.value,
       brand: event.target.brand.value,
+      quantity: event.target.quantity.value,
       id: v4()
     });
   }

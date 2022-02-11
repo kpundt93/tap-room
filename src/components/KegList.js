@@ -14,7 +14,8 @@ function KegList(props){
           brand={keg.brand}
           quantity={keg.quantity}
           id={keg.id}
-          key={keg.key} />
+          key={keg.key}
+          whenSellPintClicked={props.onSellPintClicked} />
       )}
     </React.Fragment>
   );
@@ -22,7 +23,8 @@ function KegList(props){
 
 KegList.propTypes = {
   kegList: PropTypes.array,
-  onKegSelection: PropTypes.func
+  onKegSelection: PropTypes.func,
+  onSellPintClicked: PropTypes.func
 }
 
 export default KegList;

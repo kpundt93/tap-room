@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Keg(props){
   return (
     <React.Fragment>
-      <div>
+      <div onClick = {() => props.whenKegClicked(props.id)}>
         <h4>{props.name}, {props.abv}% - ${props.price}</h4>
         <p><em>{props.brand}</em></p>
       </div>
@@ -17,7 +17,8 @@ Keg.propTypes = {
   abv: PropTypes.string,
   price: PropTypes.string,
   brand: PropTypes.string,
-  id: PropTypes.string
+  id: PropTypes.string,
+  whenKegClicked: PropTypes.func
 };
 
 export default Keg;

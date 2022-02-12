@@ -7,6 +7,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('./img/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, .75);
+  border-radius: 0.75em;
+  padding-top: 2em;
+  padding-bottom: 10em;
+  margin-top: 2em;
 }
 
 code {
@@ -24,11 +37,24 @@ code {
 #subtitle {
   font-size: 3em;
   text-align: center;
-  padding-top: 0;
   margin-top: 0;
   font-family: 'Satisfy', cursive;
+  margin-bottom: 1em;
+}
+
+#splash {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .form-label {
   padding-top: 1em;
+}
+
+.button {
+  margin-top: 1em;
+}
+
+.keg-button {
+  margin-right: 1em;
 }

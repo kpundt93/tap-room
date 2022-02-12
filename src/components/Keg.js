@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button from 'react-bootstrap/Button';
 
 function Keg(props){
   if (props.quantity === 0) {
     return (
       <React.Fragment>
         <div>
-          <h4>{props.name}, {props.abv}% - ${props.price}</h4>
-          <p><em>{props.brand}</em></p>
+          <h4>{props.name}, {props.abv}%</h4>
+          <p>{props.brand}</p>
+          <p>16oz: ${props.price}</p>
           <p>Sold out</p>
           <button onClick={() => props.whenKegClicked(props.id)}>Details</button>
         </div>
@@ -17,11 +19,13 @@ function Keg(props){
     return (
       <React.Fragment>
         <div>
-          <h4>{props.name}, {props.abv}% - ${props.price}</h4>
-          <p><em>{props.brand}</em></p>
-          <p>{props.quantity}</p>
-          <button onClick={() => props.whenKegClicked(props.id)}>Details</button>
-          <button onClick={() => props.whenSellPintClicked(props.id)}>Sell Pint</button>
+        <h4>{props.name}, {props.abv}%</h4>
+        <p>{props.brand}</p>
+        <p>16oz: ${props.price}</p>
+        <p>Pints remaining: {props.quantity}</p>
+        <Button className="keg-button" type="submit" variant="outline-primary" size="sm" onClick={() => props.whenKegClicked(props.id)}>Details</Button>
+        <Button className="keg-button" type="submit" variant="outline-primary" size="sm" onClick={() => props.whenSellPintClicked(props.id)}>Sell Pint</Button>
+        <hr />
         </div>
       </React.Fragment>
     );

@@ -3,6 +3,7 @@ import NewKegForm from './NewKegForm';
 import KegList from './KegList';
 import KegDetail from './KegDetail';
 import EditKegForm from './EditKegForm'
+import Button from 'react-bootstrap/Button';
 
 class KegControl extends React.Component {
   constructor(props) {
@@ -101,7 +102,7 @@ class KegControl extends React.Component {
     return (
       <React.Fragment>
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
+        <Button className="button" variant="outline-success" onClick={this.handleClick}>{buttonText}</Button>
       </React.Fragment>
     );
   }

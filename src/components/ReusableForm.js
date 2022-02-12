@@ -28,14 +28,6 @@ function ReusableForm(props) {
           <Form.Control type="number" name="quantity" placeholder="Available Pints (full keg= 124 pints)" min="0" defaultValue="124" />
         </Form.Group>
         <Button className="button" type="submit" variant="outline-success">{props.buttonText}</Button>
-
-
-        {/* <input type="text" name="name" placeholder="Keg Name" />
-        <input type="number" step="0.01" name="abv" placeholder="ABV" min="0.0" max="15.0" />
-        <input type="number" step="0.01" name="price" min="0.0" />
-        <input type="text" name="brand" placeholder="Brand" />
-        <input type="number" name="quantity" placeholder="Available Pints (full keg= 124 pints)" min="0" defaultValue="124" />
-        <button type="submit">{props.buttonText}</button> */}
       </Form>
     </React.Fragment>
   );

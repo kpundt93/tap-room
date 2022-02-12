@@ -20,6 +20,9 @@
 ## Description
 Built for a fictional tap room to keep track of kegs and how many pints are left in each keg. The application has full CRUD.
 
+## Component Diagram
+![Component Diagram](/src/img/diagram.png)
+
 ## Setup/Installation Requirements
 
 - Open the terminal on your desktop
